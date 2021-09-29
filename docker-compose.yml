@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  app_1:
+    container_name: app_1
+    image: nginx:1.20.1-alpine
+    ports:
+      - 8080:80
+  app_2:
+    container_name: app_2
+    image: httpd:2.4-alpine
+    ports:
+      - 9080:80
